@@ -371,3 +371,59 @@
         white-space: nowrap !important;
     }
 }
+
+/* --- FOOTER: Cuadrícula exacta de 2x2 para móvil de pie --- */
+@media (max-width: 992px) {
+    .footer-carpinteria {
+        padding: 40px 15px 20px 15px !important;
+        box-sizing: border-box !important;
+    }
+
+    .footer-carpinteria .footer-container {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 30px 20px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .footer-carpinteria .footer-col {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        grid-column: span 1 !important;
+        /* Forzamos que cada columna ocupe exactamente 1 celda (2x2) */
+    }
+
+    .footer-carpinteria .footer-col h3 {
+        font-size: 1.1rem !important;
+        margin-bottom: 10px !important;
+    }
+
+    .footer-carpinteria .footer-col p,
+    .footer-carpinteria .footer-col ul li a,
+    .footer-carpinteria .footer-col .contacto-link {
+        font-size: 0.9rem !important;
+    }
+
+    .footer-bottom {
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 15px !important;
+        margin-top: 30px !important;
+        padding-top: 20px !important;
+        border-top: 1px solid #222222 !important;
+        box-sizing: border-box !important;
+    }
+
+    .footer-bottom .footer-links {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 20px !important;
+    }
+}
