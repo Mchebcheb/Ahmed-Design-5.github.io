@@ -4,10 +4,10 @@
 :root {
     --bg-dark: #1a1a1a;
     --text-main: #e0e0e0;
-    --texto-silenciado: #b0b0b0;
+    --text-muted: #b0b0b0;
     --accent-wood: #c8963e;
     --border-color: rgba(255, 255, 255, 0.1);
-    --font-base: heredar;
+    --font-base: inherit;
 }
 
 /* ==========================================
@@ -1937,18 +1937,19 @@ main {
 }
 
 /* Rutas de tus fotos 4, 5 y 6 */
-.slide-dual-1 {
-    background-image: url('servicio-4.jpg');
+/* Rutas de las fotos de cocina blanca (ejemplo: servicio-7, 8 y 9) */
+.slide-sec3-1 {
+    background-image: url('servicio-7.jpg');
     animation-delay: 0s;
 }
 
-.slide-dual-2 {
-    background-image: url('servicio-5.jpg');
+.slide-sec3-2 {
+    background-image: url('servicio-9.jpg');
     animation-delay: 6s;
 }
 
-.slide-dual-3 {
-    background-image: url('servicio-6.jpg');
+.slide-sec3-3 {
+    background-image: url('servicio-10.jpg');
     animation-delay: 12s;
 }
 
