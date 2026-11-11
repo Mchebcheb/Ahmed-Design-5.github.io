@@ -4,10 +4,10 @@
 :root {
     --bg-dark: #1a1a1a;
     --text-main: #e0e0e0;
-    --text-muted: #b0b0b0;
+    --texto-silenciado: #b0b0b0;
     --accent-wood: #c8963e;
     --border-color: rgba(255, 255, 255, 0.1);
-    --font-base: inherit;
+    --font-base: heredar;
 }
 
 /* ==========================================
