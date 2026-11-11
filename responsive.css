@@ -793,3 +793,137 @@
         box-sizing: border-box !important;
     }
 }
+
+/* Animación de fundido y zoom lento */
+@keyframes sliderAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    4% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+        transform: scale(1.04);
+    }
+
+    37% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ==========================================
+   1. ANIMACIÓN DEL SLIDER (Única y global)
+   ========================================== */
+@keyframes sliderAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    4% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+        transform: scale(1.04);
+    }
+
+    37% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ==========================================
+   2. RESPONSIVE: CARRUSEL HERO PRINCIPAL
+   ========================================== */
+@media (max-width: 768px) {
+    .servicios-hero-slider {
+        height: 70vh;
+        min-height: 400px;
+    }
+
+    .hero-content {
+        padding: 0 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem !important;
+        margin-bottom: 10px;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem !important;
+        margin-bottom: 20px;
+    }
+
+    .hero-content .btn-hero {
+        padding: 10px 20px !important;
+        font-size: 0.85rem !important;
+        width: 100%;
+        max-width: 280px;
+        box-sizing: border-box;
+    }
+}
+
+/* Keyframes propios para que la animación vaya totalmente libre */
+@keyframes sliderAnimationDual {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    4% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+        transform: scale(1.04);
+    }
+
+    37% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Keyframes independientes para esta sección */
+@keyframes sliderAnimationSec3 {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    4% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+        transform: scale(1.04);
+    }
+
+    37% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
