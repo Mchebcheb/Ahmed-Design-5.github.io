@@ -1,0 +1,566 @@
+/* ==========================================
+   ESTILOS GENERALES Y RESET TOTAL
+   ========================================== */
+html,
+body {
+    background-color: #1a120b;
+    color: #f4efe6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ==========================================
+   MENÚ DE NAVEGACIÓN Y HAMBURGUESA (MÓVIL Y PC)
+   ========================================== */
+.main-nav {
+    background-color: #5c442f;
+    border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand a {
+    color: #c5a880;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    color: #f4efe6;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #c5a880;
+}
+
+
+/* Ocultar el botón hamburguesa por defecto en pantallas grandes */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+
+/* ==========================================
+   MIGAS DE PAN (DESCUBRIR) - Fondo Chocolate
+   ========================================== */
+.breadcrumb-container {
+    background-color: #241911;
+    /* Chocolate sutil */
+    padding: 15px 30px;
+    border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+}
+
+.breadcrumb-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    color: #a3988f;
+}
+
+.breadcrumb-content a {
+    color: #c5a880;
+    text-decoration: none;
+}
+
+.breadcrumb-content span {
+    color: #f4efe6;
+}
+
+/* ==========================================
+   SECCIÓN DOS COLUMNAS (IMAGEN + TEXTO) - Fondo Negro Base
+   ========================================== */
+.detalle-isla-section {
+    padding: 60px 20px;
+    background-color: #1a120b;
+}
+
+.detalle-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.detalle-imagen {
+    flex: 1;
+}
+
+.detalle-imagen img {
+    width: 100%;
+    height: auto;
+    max-height: 550px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(197, 168, 128, 0.3);
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.detalle-imagen:hover img {
+    transform: scale(1.04);
+}
+
+.detalle-texto {
+    flex: 1;
+}
+
+.detalle-texto h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #f4efe6;
+    margin-bottom: 25px;
+    line-height: 1.25;
+}
+
+.detalle-texto p {
+    font-size: 1.05rem;
+    color: #d1c7bd;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* ==========================================
+   BANNER PANORÁMICO SUPERIOR - Fondo Negro
+   ========================================== */
+.banner-ancho-total {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: #1a120b;
+}
+
+.banner-ancho-total img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    border-top: 1px solid rgba(197, 168, 128, 0.3);
+    border-bottom: 1px solid rgba(197, 168, 128, 0.3);
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.banner-ancho-total:hover img {
+    transform: scale(1.04);
+}
+
+/* ==========================================
+   SECCIÓN DE TEXTO EXPLICATIVO INTERMEDIO - Fondo Chocolate
+   ========================================== */
+.seccion-texto-intermedio {
+    padding: 60px 5%;
+    background-color: #241911;
+    /* Fondo chocolate distintivo para esta sección */
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(197, 168, 128, 0.15);
+    border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+.texto-intermedio-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.seccion-texto-intermedio h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f4efe6;
+    margin-bottom: 20px;
+}
+
+.seccion-texto-intermedio p {
+    font-size: 1.05rem;
+    color: #d1c7bd;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.seccion-texto-intermedio p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================
+   SECCIÓN 1: DOS IMÁGENES EN PARALELO - Fondo Negro
+   ========================================== */
+.seccion-dos-columnas {
+    width: 100%;
+    padding: 60px 5%;
+    background-color: #1a120b;
+    /* Vuelve al negro elegante */
+    box-sizing: border-box;
+}
+
+.seccion-dos-columnas .contenedor-columnas {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.seccion-dos-columnas .columna-imagen {
+    width: 48.5%;
+    flex-shrink: 0;
+}
+
+.seccion-dos-columnas .columna-imagen img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid rgba(197, 168, 128, 0.3);
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.seccion-dos-columnas .columna-imagen:hover img {
+    transform: scale(1.04);
+}
+
+/* ==========================================
+   BANNER PANORÁMICO INFERIOR - Fondo Chocolate
+   ========================================== */
+.banner-inferior {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: #241911;
+    /* Fondo chocolate para cerrar con contraste */
+}
+
+.banner-inferior img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    border-top: 1px solid rgba(197, 168, 128, 0.3);
+    border-bottom: 1px solid rgba(197, 168, 128, 0.3);
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.banner-inferior:hover img {
+    transform: scale(1.04);
+}
+
+/* ==========================================
+   MEDIA QUERIES (RESPONSIVE MÓVIL)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #140e09;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+        text-align: center;
+        gap: 20px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .seccion-dos-columnas .contenedor-columnas {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .seccion-dos-columnas .columna-imagen {
+        width: 100%;
+    }
+}
+
+/* ==========================================
+   SECCIÓN SUPERFICIE NECESARIA (ESTILO REFERENCIA)
+   ========================================== */
+.seccion-superficie {
+    padding: 60px 5%;
+    background-color: #241911;
+    /* Fondo chocolate elegante de contraste */
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(197, 168, 128, 0.15);
+    border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+.superficie-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.seccion-superficie h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f4efe6;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.seccion-superficie p {
+    font-size: 1.05rem;
+    color: #d1c7bd;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ==========================================
+   SECCIÓN SUPERFICIE CON IMAGEN INTEGRADA
+   ========================================== */
+.seccion-superficie-imagen {
+    padding: 60px 5%;
+    background-color: #241911;
+    /* Fondo chocolate elegante de contraste */
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(197, 168, 128, 0.15);
+    border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+.superficie-imagen-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.superficie-texto {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.superficie-texto h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f4efe6;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.superficie-texto p {
+    font-size: 1.05rem;
+    color: #d1c7bd;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.superficie-foto {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 0;
+}
+
+.superficie-foto img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 0;
+    /* Quita el radio si quieres que toque los bordes absolutos, o déjalo en 4px si prefieres un ligero toque */
+    display: block;
+    border: none;
+    /* O mantén tu borde si lo prefieres */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.superficie-foto:hover img {
+    transform: scale(1.04);
+}
+
+/* ==========================================
+   SECCIÓN TIPOS DE DISTRIBUCIÓN (IMAGEN IZQ + TEXTO DER)
+   ========================================== */
+.seccion-tipos-distribucion {
+    padding: 60px 5%;
+    background-color: #1a120b;
+    /* Alterna con tu fondo negro base o chocolate */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tipos-distribucion-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.tipos-imagen {
+    flex: 1;
+}
+
+.tipos-imagen img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    border: 1px solid rgba(197, 168, 128, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.tipos-imagen:hover img {
+    transform: scale(1.04);
+}
+
+.tipos-texto {
+    flex: 1;
+    text-align: left;
+}
+
+.tipos-texto h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f4efe6;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.tipos-texto p {
+    font-size: 1.05rem;
+    color: #d1c7bd;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ==========================================
+   SECCIÓN TRES COLUMNAS: IDEAS DE COCINAS
+   ========================================== */
+.seccion-tres-columnas-ideas {
+    padding: 60px 5%;
+    background-color: #241911;
+    /* Alterna con tu fondo base */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ideas-container-general {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.ideas-titulo-principal {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #f4efe6;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.ideas-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+.idea-card {
+    flex: 1;
+    background-color: #241911;
+    /* Tarjeta con fondo chocolate sutil */
+    border: 1px solid rgba(197, 168, 128, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.idea-imagen img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.idea-imagen:hover img {
+    transform: scale(1.04);
+}
+
+.idea-info {
+    padding: 25px 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.idea-info h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #f4efe6;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.idea-modelo {
+    font-size: 0.95rem;
+    color: #a3988f;
+    margin-bottom: 5px;
+}
+
+.idea-autor {
+    font-size: 0.9rem;
+    color: #c5a880;
+    margin: 0;
+}

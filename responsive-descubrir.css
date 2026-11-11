@@ -1,0 +1,326 @@
+/* ==========================================
+   RESPONSIVO: MÓVIL VERTICAL Y HORIZONTAL
+   ========================================== */
+
+/* Móvil en vertical (de pie) */
+@media (max-width: 900px) {
+    .detalle-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 10px;
+    }
+
+    .detalle-texto h1 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+
+    .detalle-texto p {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
+
+    .detalle-isla-section {
+        padding: 30px 15px;
+    }
+}
+
+/* Móvil en horizontal (pantalla plana) */
+@media (max-width: 900px) and (orientation: landscape) {
+    .detalle-container {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .detalle-texto h1 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .detalle-texto p {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    .detalle-imagen img {
+        max-height: 320px;
+    }
+}
+
+/* Móvil vertical para la foto panorámica */
+@media (max-width: 900px) {
+    .banner-panoramico-section {
+        padding: 15px 15px 40px 15px;
+    }
+
+    .banner-panoramico-container img {
+        max-height: 250px;
+    }
+}
+
+/* Móvil horizontal (pantalla plana) */
+@media (max-width: 900px) and (orientation: landscape) {
+    .banner-panoramico-container img {
+        max-height: 280px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVO PARA EL BANNER PANORÁMICO
+   ========================================== */
+
+/* Móvil vertical (de pie) */
+@media (max-width: 900px) {
+    .banner-ancho-total img {
+        height: 220px !important;
+        /* Altura más baja y cómoda para pantallas pequeñas de móvil */
+    }
+}
+
+/* Móvil horizontal (pantalla plana) */
+@media (max-width: 900px) and (orientation: landscape) {
+    .banner-ancho-total img {
+        height: 260px !important;
+        /* Altura equilibrada para móvil en horizontal */
+    }
+}
+
+
+
+/* Móvil en horizontal (landscape) */
+@media (max-width: 900px) and (orientation: landscape) {
+    .banner-ancho-total img {
+        height: 260px !important;
+    }
+}
+
+/* Móvil en vertical (de pie) */
+@media (max-width: 900px) {
+    .seccion-dos-columnas .contenedor-columnas {
+        flex-direction: column !important;
+        gap: 25px;
+    }
+
+    .seccion-dos-columnas .columna-imagen img {
+        height: 240px !important;
+        /* Altura más baja y proporcionada para móvil de pie */
+    }
+}
+
+/* Móvil en horizontal (pantalla plana / landscape) */
+@media (max-width: 900px) and (orientation: landscape) {
+    .seccion-dos-columnas .contenedor-columnas {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        gap: 20px;
+    }
+
+    .seccion-dos-columnas .columna-imagen {
+        flex: 1 !important;
+        min-width: 0 !important;
+    }
+
+    .seccion-dos-columnas .columna-imagen img {
+        height: 200px !important;
+        /* Altura compacta para que quepan las dos lado a lado sin cortarse */
+    }
+}
+
+/* ==========================================
+   ESTILOS RESPONSIVE PARA MÓVIL
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        /* Aparece el botón hamburguesa en pantallas pequeñas */
+    }
+
+    .nav-menu {
+        display: none;
+        /* Oculta el menú normal de PC por defecto en móvil */
+        flex-direction: column;
+        width: 100%;
+        background-color: #140e09;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* Clase activa que JavaScript activará para desplegar el menú */
+    .nav-menu.active {
+        display: flex;
+    }
+}
+
+/* Responsive para móvil vertical */
+@media screen and (max-width: 768px) {
+    .seccion-superficie-imagen {
+        padding: 40px 20px;
+    }
+
+    .superficie-texto h2 {
+        font-size: 1.5rem;
+    }
+
+    .superficie-foto img {
+        height: 250px;
+    }
+}
+
+/* Responsive para móvil en horizontal (paisaje) */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .superficie-foto img {
+        height: 280px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE PARA TIPOS DE DISTRIBUCIÓN (IGUALADA)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .seccion-tipos-distribucion {
+        padding: 40px 0 !important;
+        /* Eliminamos los laterales para que ocupe todo */
+        width: 100% !important;
+    }
+
+    .tipos-distribucion-container {
+        flex-direction: column !important;
+        gap: 20px !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    /* Contenedor de la imagen sin restricciones para que encaje limpia */
+    .tipos-imagen {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .tipos-imagen img {
+        width: 100% !important;
+        height: 300px !important;
+        /* Altura equilibrada para móvil */
+        object-fit: cover !important;
+        border-radius: 4px !important;
+        /* Mantiene un radio suave igual que la otra sección */
+        display: block !important;
+        border: 1px solid rgba(197, 168, 128, 0.3) !important;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6) !important;
+    }
+
+    /* Respiro solo para el texto para que no pegue contra los bordes de la pantalla */
+    .tipos-texto {
+        padding: 0 20px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .tipos-texto h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .tipos-distribucion-container {
+        flex-direction: row !important;
+    }
+
+    .tipos-imagen img {
+        height: 240px !important;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE PARA MÓVIL (VERTICAL Y HORIZONTAL)
+   ========================================== */
+@media screen and (max-width: 992px) {
+    .ideas-grid {
+        flex-wrap: wrap;
+    }
+
+    .idea-card {
+        width: 100%;
+        flex: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .seccion-tres-columnas-ideas {
+        padding: 40px 20px;
+    }
+
+    .ideas-titulo-principal {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+
+    .idea-imagen img {
+        height: 220px;
+    }
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .ideas-grid {
+        flex-wrap: nowrap;
+    }
+
+    .idea-card {
+        flex: 1;
+    }
+
+    .idea-imagen img {
+        height: 180px;
+    }
+}
+
+/* ==========================================
+   TOP BAR: EN LÍNEA Y COMPACTO EN MÓVIL
+   ========================================== */
+@media screen and (max-width: 900px) {
+    .top-bar {
+        padding: 6px 10px !important;
+        font-size: 0.8rem !important;
+    }
+
+    .top-bar .container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    /* Agrupamos los datos de contacto en una sola línea o flex horizontal */
+    .top-bar .contact-info {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        gap: 12px !important;
+        align-items: center !important;
+    }
+
+    .top-bar .contact-info span {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 4px !important;
+    }
+
+    /* Ajustamos el botón de cita previa para que encaje al lado sin molestar */
+    .top-bar .top-links a {
+        padding: 4px 8px !important;
+        font-size: 0.75rem !important;
+        white-space: nowrap !important;
+    }
+}

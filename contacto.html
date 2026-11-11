@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ahmed Design: Desarrollador web profesional al antojo del cliente.">
+    <title>Ahmed Design | carpinteria artesanal a medida</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span>
+                    <a href="tel:+212614738881" style="color: inherit; text-decoration: none;">
+                        <i class="fas fa-phone"></i> 00212614738881
+                    </a>
+                </span>
+
+                <span>
+                    <a href="mailto:mchebcheb2019@gmail.com" style="color: inherit; text-decoration: none;">
+                        <i class="fas fa-envelope"></i> mchebcheb2019@gmail.com
+                    </a>
+                </span>
+            </div>
+            <div class="top-links">
+                <a href="index.html#reserva-cita">Cita Previa</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menú de Navegación Principal -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">Ahmed Design —</a>
+            </div>
+
+            <!-- Botón Hamburguesa para móviles -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class='bx bx-menu'></i>
+            </button>
+
+            <!-- Menú de enlaces -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="servicios.html">Servicios a Medida</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN CONTACTO SUPER CHULA -->
+    <section id="contacto" class="seccion-contacto-puro">
+        <div class="contacto-contenedor-puro">
+            <span class="contacto-subtitulo">ESTAMOS PARA ESCUCHARTE</span>
+            <h2>Ponte en Contacto</h2>
+            <p>¿Tienes un proyecto en mente o dudas sobre materiales? Escríbenos y te responderemos al instante.</p>
+
+            <form class="formulario-contacto-puro" action="https://formspree.io/f/xnjlzeap" method="POST">
+                <div class="grupo-input-puro">
+                    <label for="nombre-contacto">Tu Nombre</label>
+                    <input type="text" id="nombre-contacto" name="nombre" placeholder="Nombre y apellidos" required>
+                </div>
+
+                <div class="grupo-input-puro">
+                    <label for="email-contacto">Correo Electrónico</label>
+                    <input type="email" id="email-contacto" name="email" placeholder="tucorreo@email.com" required>
+                </div>
+
+                <div class="grupo-input-puro">
+                    <label for="telefono-contacto">Teléfono</label>
+                    <input type="tel" id="telefono-contacto" name="telefono" placeholder="Ej: 600 000 000" required>
+                </div>
+
+                <div class="grupo-input-puro">
+                    <label for="mensaje-contacto">Tu Mensaje</label>
+                    <textarea id="mensaje-contacto" name="mensaje" rows="4"
+                        placeholder="Cuéntanos los detalles de lo que necesitas..." required></textarea>
+                </div>
+
+                <div class="botones-container-contacto">
+                    <button type="submit" class="btn-enviar-contacto">ENVIAR MENSAJE</button>
+                    <a href="index.html" class="btn-volver">Volver al Inicio</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer-carpinteria">
+        <div class="footer-container">
+            <!-- Columna 1: Marca y breve descripción -->
+            <div class="footer-col footer-brand">
+                <div class="footer-brand">
+                    <h3>Ahmed Design —</h3>
+                    <p>
+                        Ebanistería y carpintería<br>
+                        artesanal a medida.<br>
+                        Creamos espacios únicos<br>
+                        con maderas nobles y<br>
+                        diseño exclusivo para<br>
+                        tu hogar o negocio.
+                    </p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/Ahmed.Chahmout.1088893" target="_blank" class="social-fb"
+                        aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.instagram.com/mchebcheb2019/" target="_blank" class="social-ig"
+                        aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.me/212614738881?text=Hola%20Ahmed" target="_blank" class="social-wa"
+                        aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.linkedin.com/in/ahmed-chahmout-1a87723b5" target="_blank" class="social-in"
+                        aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Enlaces rápidos -->
+            <div class="footer-col">
+                <h3>Explorar —</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="servicios.html">Servicios a Medida</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Contacto Directo -->
+            <div class="footer-col">
+                <h3>Contacto —</h3>
+                <p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Ksar+el-Kebir" target="_blank"
+                        class="contacto-link">
+                        <i class='bx bxs-map'></i> Ksar el-Kebir, Marruecos
+                    </a>
+                </p>
+                <p>
+                    <a href="tel:+212614738881" class="contacto-link">
+                        <i class='bx bxs-phone'></i> +212 614 73 88 81
+                    </a>
+                </p>
+                <p>
+                    <a href="mailto:mchebcheb2019@gmail.com" class="contacto-link">
+                        <i class='bx bxs-envelope'></i> mchebcheb2019@gmail.com
+                    </a>
+                </p>
+            </div>
+
+            <!-- Columna 4: Newsletter / Inspiración -->
+            <div class="footer-col">
+                <h3>Inspiración —</h3>
+                <p>Suscríbete para recibir tendencias en diseño de interiores y carpintería en madera.</p>
+                <form action="https://formspree.io/f/xnjlzeap" method="POST" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">UNIRSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Barra inferior de Copyright -->
+        <div class="footer-bottom">
+            <p>© 2026 Ahmed Design. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="privacidad.html">Privacidad</a>
+                <a href="cookies.html">Cookies</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/212614738881?text=Hola%20Ahmed" class="whatsapp-btn" target="_blank"
+        aria-label="Chat de WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

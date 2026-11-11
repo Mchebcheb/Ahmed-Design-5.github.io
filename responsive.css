@@ -1,0 +1,795 @@
+/* ==========================================
+   RESPONSIVE FOOTER - CARPINTERIA
+   ========================================== */
+@media (max-width: 768px) {
+    .footer-carpinteria {
+        padding: 40px 15px 20px 15px;
+    }
+
+    .footer-carpinteria .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: left;
+    }
+
+    .footer-carpinteria .social-links {
+        justify-content: flex-start;
+    }
+
+    .footer-carpinteria .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-carpinteria .footer-bottom .footer-links {
+        justify-content: center;
+    }
+}
+
+/* ==========================================
+   FORZAR 2 COLUMNAS EN MÓVIL (VERTICAL)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    html body .footer-carpinteria .footer-container {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+    }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+
+    /* Desplaza los enlaces del footer hacia la izquierda solo cuando el móvil está en horizontal (plano) */
+    .footer-links a {
+        margin-right: 75px !important;
+        /* Ajusta los píxeles si necesitas más o menos espacio */
+    }
+}
+
+/* ==========================================
+   SOLUCIÓN DEFINITIVA: FOOTER 2x2 COMPACTO EN MÓVIL
+   ========================================== */
+@media screen and (max-width: 900px) {
+
+    /* Contenedor general del footer ajustado a la pantalla */
+    .footer-carpinteria {
+        padding: 30px 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Forzamos cuadrícula estricta de 2 columnas centradas */
+    .footer-carpinteria .footer-container {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(130px, 1fr)) !important;
+        justify-content: center !important;
+        justify-items: start !important;
+        gap: 12px !important;
+        /* Distancia mínima entre columnas para que no choquen */
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+
+    /* Aseguramos que cada columna ocupe su espacio sin desbordar */
+    .footer-carpinteria .footer-brand,
+    .footer-carpinteria .footer-col {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Evitamos que los títulos con guión largo (—) se rompan feo */
+    .footer-carpinteria h3 {
+        font-size: 1.05rem !important;
+        white-space: nowrap !important;
+    }
+
+    /* Ajustamos el formulario de suscripción para que no expanda la columna */
+    .footer-carpinteria input[type="email"],
+    .footer-carpinteria button {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* ==========================================
+   TOP BAR: EN LÍNEA Y COMPACTO EN MÓVIL
+   ========================================== */
+@media screen and (max-width: 900px) {
+    .top-bar {
+        padding: 6px 10px !important;
+        font-size: 0.8rem !important;
+    }
+
+    .top-bar .container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    /* Agrupamos los datos de contacto en una sola línea o flex horizontal */
+    .top-bar .contact-info {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        gap: 12px !important;
+        align-items: center !important;
+    }
+
+    .top-bar .contact-info span {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 4px !important;
+    }
+
+    /* Ajustamos el botón de cita previa para que encaje al lado sin molestar */
+    .top-bar .top-links a {
+        padding: 4px 8px !important;
+        font-size: 0.75rem !important;
+        white-space: nowrap !important;
+    }
+}
+
+/* Animación de fundido suave (Fade in / Fade out) */
+@keyframes sliderAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+        transform: scale(1.03);
+    }
+
+    /* Zoom lento muy elegante */
+    41% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ==========================================
+   MENÚ HAMBURGUESA RESPONSIVO (DEFINITIVO)
+   ========================================== */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block !important;
+        /* Muestra el botón hamburguesa en móviles */
+    }
+
+    .nav-menu {
+        display: none;
+        /* Oculta el menú por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0e0a07;
+        /* Mismo tono oscuro corporativo */
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 2px solid #c5a880;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+        gap: 15px;
+        z-index: 9999;
+        /* Por encima de todo */
+    }
+
+    /* Clase que activa el despliegue al hacer clic con JS */
+    .nav-menu.active {
+        display: flex !important;
+    }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .menu-toggle {
+        display: block !important;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0e0a07;
+        /* El mismo fondo oscuro de la barra */
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 2px solid #c5a880;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+        gap: 15px;
+        z-index: 9999;
+        /* Para que esté por encima de la foto del header */
+    }
+
+    .nav-menu.active {
+        display: flex !important;
+    }
+}
+
+/* ==========================================
+   AJUSTE DE TEXTOS DEL HERO EN MÓVILES
+   ========================================== */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 0 15px;
+        /* Margen a los lados para que no pegue con los bordes de la pantalla */
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem !important;
+        /* Título más compacto para que no sature */
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .hero-content p {
+        font-size: 0.95rem !important;
+        /* Párrafo más pequeño y elegante */
+        margin-bottom: 20px;
+    }
+
+    .btn-hero {
+        padding: 10px 20px !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+/* ==========================================
+   AJUSTE PARA MÓVIL EN HORIZONTAL (PANTALLA PLANA)
+   ========================================== */
+@media (max-width: 900px) and (orientation: landscape) {
+    .hero-slider {
+        min-height: 100vh;
+        /* Se adapta a la altura tumbada */
+    }
+
+    .hero-content {
+        padding-top: 40px;
+        /* Sube un poco el contenido para que no tape el centro */
+        padding-bottom: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.4rem !important;
+        /* Título más compacto en horizontal */
+        line-height: 1.1 !important;
+        margin-bottom: 5px !important;
+    }
+
+    .hero-content p {
+        font-size: 0.85rem !important;
+        /* Párrafo más pequeño */
+        margin-bottom: 10px !important;
+    }
+
+    .btn-hero {
+        padding: 6px 15px !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE: SECCIÓN ISLA (MÓVIL VERTICAL Y HORIZONTAL)
+   ========================================== */
+
+/* Móvil vertical (de pie) */
+@media (max-width: 768px) {
+    .section-isla {
+        padding: 50px 15px;
+    }
+
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .section-header p {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+
+    .btn-outline {
+        padding: 10px 25px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Móvil horizontal (pantalla plana) */
+@media (max-width: 900px) and (orientation: landscape) {
+    .section-isla {
+        padding: 40px 20px;
+    }
+
+    .section-header h2 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .title-line {
+        margin-bottom: 15px;
+    }
+
+    .section-header p {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE MÓVIL VERTICAL Y HORIZONTAL
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .seccion-cocina-abierta {
+        padding-bottom: 40px;
+    }
+
+    .cocina-abierta-banner {
+        height: 280px;
+    }
+
+    .cocina-abierta-contenido {
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    .cocina-abierta-contenido h2 {
+        font-size: 1.6rem;
+    }
+
+    .cocina-abierta-contenido p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .btn-descubrir {
+        padding: 10px 35px;
+        width: 100%;
+        max-width: 250px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .cocina-abierta-banner {
+        height: 220px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE MÓVIL (COCINAS MODERNAS)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .seccion-cocina-moderna {
+        padding-bottom: 40px;
+    }
+
+    .cocina-moderna-banner {
+        height: 280px;
+    }
+
+    .cocina-moderna-contenido {
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    .cocina-moderna-contenido h2 {
+        font-size: 1.6rem;
+    }
+
+    .cocina-moderna-contenido p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .cocina-moderna-banner {
+        height: 220px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE MÓVIL (VERT. Y HORIZ. - COCINAS EN L)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .seccion-cocina-l {
+        padding-bottom: 40px;
+    }
+
+    .cocina-l-banner {
+        height: 280px;
+    }
+
+    .cocina-l-contenido {
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    .cocina-l-contenido h2 {
+        font-size: 1.6rem;
+    }
+
+    .cocina-l-contenido p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .btn-descubrir-l {
+        padding: 10px 35px;
+        width: 100%;
+        max-width: 250px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .cocina-l-banner {
+        height: 220px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE MÓVIL (COCINAS EN MADERA)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .seccion-cocina-madera {
+        padding-bottom: 40px;
+    }
+
+    .cocina-madera-banner {
+        height: 280px;
+    }
+
+    .cocina-madera-contenido {
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    .cocina-madera-contenido h2 {
+        font-size: 1.6rem;
+    }
+
+    .cocina-madera-contenido p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .btn-descubrir-madera {
+        padding: 10px 35px;
+        width: 100%;
+        max-width: 250px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .cocina-madera-banner {
+        height: 220px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE MÓVIL (COCINAS BLANCAS)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .seccion-cocina-blanca {
+        padding-bottom: 40px;
+    }
+
+    .cocina-blanca-banner {
+        height: 280px;
+    }
+
+    .cocina-blanca-contenido {
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    .cocina-blanca-contenido h2 {
+        font-size: 1.6rem;
+    }
+
+    .cocina-blanca-contenido p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .btn-descubrir-blanca {
+        padding: 10px 35px;
+        width: 100%;
+        max-width: 250px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .cocina-blanca-banner {
+        height: 220px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE CITA PREVIA
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .seccion-cita {
+        padding: 50px 15px;
+    }
+
+    .cita-contenedor h2 {
+        font-size: 1.7rem;
+    }
+
+    .grupo-doble {
+        grid-template-columns: 1fr;
+        /* Pasa a 1 sola columna en móvil */
+        gap: 20px;
+    }
+
+    .grupo-input input,
+    .grupo-input textarea {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+
+    .btn-reserva {
+        padding: 14px;
+        font-size: 0.85rem;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE PROYECTOS (MÓVIL VERTICAL Y HORIZONTAL)
+   ========================================== */
+
+/* Móvil Vertical (Pantalla de pie) */
+@media (max-width: 768px) and (orientation: portrait) {
+    .proyectos-hero {
+        padding: 40px 15px 25px 15px;
+    }
+
+    .proyectos-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .grid-proyectos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .imagen-contenedor {
+        height: 240px;
+    }
+}
+
+/* Móvil Horizontal (Pantalla plana / Landscape) */
+@media (max-height: 500px) and (orientation: landscape) {
+    .proyectos-hero {
+        padding: 30px 15px 15px 15px;
+    }
+
+    .proyectos-hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .grid-proyectos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .imagen-contenedor {
+        height: 200px;
+    }
+}
+
+/* Adaptación Mobile */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+    }
+
+    .bento-large {
+        grid-row: span 1 !important;
+        height: 280px !important;
+    }
+
+    .bento-item {
+        height: 220px !important;
+    }
+}
+
+/* --- RESPONSIVE COMPLETO: CITA PREVIA & BOTONES --- */
+
+/* Tablets y pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+    .seccion-cita {
+        padding: 40px 15px !important;
+        min-height: auto !important;
+    }
+
+    .cita-contenedor {
+        padding: 25px 20px !important;
+        max-width: 100% !important;
+    }
+
+    .grupo-doble {
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+
+    .formulario-cita .botones-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .btn-reserva,
+    .formulario-cita .btn-volver {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* Móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    .cita-contenedor {
+        padding: 20px 12px !important;
+    }
+
+    .cita-contenedor h2 {
+        font-size: 1.6rem !important;
+    }
+
+    .formulario-cita input,
+    .formulario-cita textarea {
+        padding: 10px 12px !important;
+        font-size: 0.95rem !important;
+    }
+}
+
+/* Móviles en horizontal / Pantalla plana (Landscape) */
+@media (max-height: 500px) and (orientation: landscape) {
+    .seccion-cita {
+        padding: 25px 15px !important;
+        min-height: auto !important;
+    }
+
+    .cita-contenedor {
+        padding: 20px 25px !important;
+    }
+
+    .grupo-doble {
+        flex-direction: row !important;
+        gap: 15px !important;
+    }
+}
+
+/* --- Responsive para el bloque de cierre en Proyectos --- */
+@media (max-width: 768px) {
+    .contenedor-cierre-proyectos {
+        padding: 40px 15px !important;
+    }
+
+    .titulo-cierre {
+        font-size: 1.5rem !important;
+    }
+
+    .texto-cierre {
+        font-size: 1rem !important;
+    }
+
+    .btn-hero {
+        width: 100% !important;
+        max-width: 280px !important;
+        box-sizing: border-box !important;
+        padding: 12px 20px !important;
+    }
+}
+
+/* --- RESPONSIVE COMPLETO: SECCIÓN CONTACTO --- */
+
+/* Tablets y pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+    .seccion-contacto-puro {
+        padding: 50px 15px !important;
+    }
+
+    .contacto-contenedor-puro {
+        padding: 30px 20px !important;
+        max-width: 100% !important;
+    }
+
+    .contacto-contenedor-puro h2 {
+        font-size: 1.8rem !important;
+    }
+
+    .contacto-contenedor-puro p {
+        font-size: 0.95rem !important;
+        margin-bottom: 25px !important;
+    }
+
+    .botones-container-contacto {
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .btn-enviar-contacto,
+    .formulario-contacto-puro .btn-volver {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* Móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    .seccion-contacto-puro {
+        padding: 35px 10px !important;
+    }
+
+    .contacto-contenedor-puro {
+        padding: 20px 15px !important;
+    }
+
+    .contacto-contenedor-puro h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .formulario-contacto-puro input,
+    .formulario-contacto-puro textarea {
+        padding: 10px 12px !important;
+        font-size: 0.95rem !important;
+    }
+}
+
+/* Móviles en horizontal / Pantalla plana (Landscape) */
+@media (max-height: 500px) and (orientation: landscape) {
+    .seccion-contacto-puro {
+        padding: 30px 15px !important;
+        min-height: auto !important;
+    }
+
+    .contacto-contenedor-puro {
+        padding: 20px 30px !important;
+    }
+}
+
+/* --- Responsive para el botón Volver en Contacto --- */
+@media (max-width: 768px) {
+    .formulario-contacto-puro .btn-volver {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
+}

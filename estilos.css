@@ -1,0 +1,1614 @@
+/* ==========================================
+   VARIABLES GLOBALES - AHMED DESIGN
+   ========================================== */
+:root {
+    --bg-dark: #1a1a1a;
+    --text-main: #e0e0e0;
+    --text-muted: #b0b0b0;
+    --accent-wood: #c8963e;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --font-base: inherit;
+}
+
+/* ==========================================
+   ESTILOS FOOTER - CARPINTERIA (AHMED DESIGN)
+   ========================================== */
+.footer-carpinteria {
+    background-color: #2c221e;
+    /* Color madera oscura / nogal elegante */
+    color: var(--text-main);
+    padding: 60px 20px 20px 20px;
+    font-family: var(--font-base);
+    border-top: 3px solid var(--accent-wood);
+    /* Un detalle superior en tono madera noble para enmarcar */
+}
+
+.footer-carpinteria .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-carpinteria .footer-col h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-carpinteria .footer-col p,
+.footer-carpinteria .footer-col ul li a {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    text-decoration: none;
+    margin-bottom: 12px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.footer-carpinteria .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-carpinteria .footer-col ul li a:hover {
+    color: var(--accent-wood);
+    padding-left: 5px;
+}
+
+/* Barra inferior */
+.footer-carpinteria .footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.85rem;
+    color: #a0938e;
+    /* Tono sutil acorde a la madera */
+}
+
+.footer-carpinteria .footer-bottom .footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-carpinteria .footer-bottom .footer-links a {
+    color: #a0938e;
+    text-decoration: none;
+}
+
+.footer-carpinteria .footer-bottom .footer-links a:hover {
+    color: #fff;
+}
+
+/* ==========================================
+   ESTILOS REDES SOCIALES - COLORES PERMANENTES
+   ========================================== */
+.footer-carpinteria .social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-carpinteria .social-links a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    /* Este color se mantiene por defecto si lo deseas, o usa el color de abajo */
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Colores originales fijos por defecto (fondo translúcido con su color corporativo) */
+.footer-carpinteria .social-links a.social-fb {
+    background: rgba(24, 119, 242, 0.2);
+    color: #1877f2;
+}
+
+.footer-carpinteria .social-links a.social-ig {
+    background: rgba(223, 89, 20, 0.2);
+    color: #df5914;
+}
+
+.footer-carpinteria .social-links a.social-wa {
+    background: rgba(37, 211, 102, 0.2);
+    color: #25d366;
+}
+
+.footer-carpinteria .social-links a.social-in {
+    background: rgba(10, 102, 194, 0.2);
+    color: #0a66c2;
+}
+
+/* Efecto Hover (al pasar el ratón se iluminan a todo color con texto blanco) */
+.footer-carpinteria .social-links a.social-fb:hover {
+    background: #1877f2;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.footer-carpinteria .social-links a.social-ig:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #df5914 45%, #c62a88 60%, #8a2be2 90%);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.footer-carpinteria .social-links a.social-wa:hover {
+    background: #25d366;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.footer-carpinteria .social-links a.social-in:hover {
+    background: #0a66c2;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Formulario Newsletter */
+.footer-carpinteria .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.footer-carpinteria .newsletter-form input {
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: #fff;
+    border-radius: 4px;
+    outline: none;
+}
+
+.footer-carpinteria .newsletter-form input:focus {
+    border-color: var(--accent-wood);
+}
+
+.footer-carpinteria .newsletter-form button {
+    padding: 10px;
+    background-color: #ffffff;
+    color: var(--bg-dark);
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.footer-carpinteria .newsletter-form button:hover {
+    background-color: var(--accent-wood);
+    color: #fff;
+}
+
+/* Barra inferior */
+.footer-carpinteria .footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.footer-carpinteria .footer-bottom .footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-carpinteria .footer-bottom .footer-links a {
+    color: #888;
+    text-decoration: none;
+}
+
+.footer-carpinteria .footer-bottom .footer-links a:hover {
+    color: #fff;
+}
+
+/* ==========================================
+   BOTÓN FLOTANTE WHATSAPP (.fa-brands / .fab)
+   ========================================== */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    /* Fondo verde oficial de WhatsApp */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* El icono con sus clases exactas en blanco y con su transición limpia */
+.whatsapp-btn .fa-brands,
+.whatsapp-btn .fab {
+    color: #ffffff;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto Hover al pasar el ratón */
+.whatsapp-btn:hover {
+    background-color: #20ba5a;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+}
+
+/* ==========================================
+   ESTILOS ENLACES DE CONTACTO EN FOOTER
+   ========================================== */
+.footer-carpinteria .contacto-link {
+    color: var(--text-muted);
+    /* Hereda el color gris/claro del texto */
+    text-decoration: none;
+    /* Le quita el subrayado feo por defecto */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.footer-carpinteria .contacto-link:hover {
+    color: var(--accent-wood);
+    /* Se pone en tono madera al pasar el ratón */
+}
+
+/* ==========================================
+   FIJAR FOOTER ABAJO (MIN-HEIGHT 100VH)
+   ========================================== */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* El contenido principal de tu web debe expandirse para ocupar el espacio libre */
+main {
+    flex: 1;
+}
+
+/* El footer se quedará abajo del todo por defecto */
+.footer-carpinteria {
+    margin-top: auto;
+}
+
+/* ==========================================
+   DESPLAZAMIENTO DE ENLACES DEL FOOTER
+   ========================================== */
+.footer-carpinteria .footer-bottom .footer-links a {
+    margin-right: 65px !important;
+}
+
+/* ==========================================
+   AJUSTE DE SEPARACIÓN (PANTALLA GRANDE / PC)
+   ========================================== */
+.footer-carpinteria .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    /* <--- Cambia este valor: bájalo a 15px o 20px si quieres acercarlas más, o súbelo si quieres separarlas */
+    margin-bottom: 40px;
+}
+
+/* ==========================================
+   TOP BAR (ESTILOS GENERALES / PC)
+   ========================================== */
+.top-bar {
+    background-color: #1a120b;
+    /* Tono madera oscura acorde al footer */
+    color: #d1c7bd;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-bar .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-bar .contact-info {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.top-bar .contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top-bar .contact-info i {
+    color: #c5a880;
+    /* Tono dorado elegante para los iconos */
+}
+
+.top-bar .top-links a {
+    color: #ffffff;
+    background-color: #c5a880;
+    padding: 6px 14px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.top-bar .top-links a:hover {
+    background-color: #b3956d;
+}
+
+/* ==========================================
+   HERO SLIDER DE FONDO AUTOMÁTICO (PC)
+   ========================================== */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    /* Altura del header (puedes ajustarla a 70vh o 100vh si lo quieres pantalla completa) */
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Capas base de las imágenes de fondo */
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: sliderAnimation 18s infinite;
+    /* 18 segundos en total (6s por cada una de las 3 imágenes) */
+    z-index: 1;
+}
+
+/* Rutas de tus 3 imágenes de fondo (reemplaza con las rutas de tus fotos de madera/muebles) */
+.hero-bg.slide-1 {
+    background: url('hero-1.jpg') center/cover no-repeat;
+    animation-delay: 0s;
+}
+
+.hero-bg.slide-2 {
+    background: url('hero-2.jpg') center/cover no-repeat;
+    animation-delay: 6s;
+}
+
+.hero-bg.slide-3 {
+    background: url('hero-3.jpg') center/cover no-repeat;
+    animation-delay: 12s;
+}
+
+/* Capa oscura superior para mejorar la legibilidad del texto */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 18, 11, 0.55);
+    /* Tono madera oscura translúcida */
+    z-index: 2;
+}
+
+/* Contenido del header por encima del fondo */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #d1c7bd;
+}
+
+/* ==========================================
+   MENÚ DE NAVEGACIÓN PRINCIPAL
+   ========================================== */
+.main-nav {
+    background-color: #1a120b;
+    /* Fondo oscuro corporativo */
+    border-bottom: 1px solid #c5a88033;
+    /* Sutil línea dorada translúcida */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand a {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    color: #d1c7bd;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #c5a880;
+    /* Tu tono dorado al pasar el ratón */
+}
+
+/* ==========================================
+   MENÚ DE NAVEGACIÓN Y HAMBURGUESA
+   ========================================== */
+.main-nav {
+    background-color: #5c442f;
+    border-bottom: 1px solid #c5a88033;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand a {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    color: #d1c7bd;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #c5a880;
+}
+
+/* Ocultar el botón hamburguesa por defecto en pantallas grandes */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+/* ==========================================
+   ESTILO PARA EL ENLACE ACTIVO DEL MENÚ
+   ========================================== */
+.nav-menu li a.active {
+    color: #c5a880 !important;
+    /* Tu color dorado corporativo */
+    font-weight: 600;
+}
+
+/* Opcional: si quieres una pequeña línea sutil debajo del enlace activo */
+.nav-menu li a.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c5a880;
+    margin-top: 4px;
+}
+
+.btn-hero {
+    color: #00bcd4;
+    font-size: 25px;
+}
+
+/* ==========================================
+   SECCIÓN ESTILO "COCINAS CON ISLA"
+   ========================================== */
+.section-isla {
+    background-color: #1a120b;
+    /* Fondo oscuro corporativo */
+    color: #f4efe6;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #f4efe6;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* Línea sutil decorativa igual que en la referencia */
+.title-line {
+    width: 120px;
+    height: 3px;
+    background-color: #c5a880;
+    margin: 0 auto 25px auto;
+}
+
+.section-header p {
+    font-size: 1.05rem;
+    color: #d1c7bd;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botón con borde estilo minimalista */
+.btn-outline {
+    display: inline-block;
+    padding: 12px 35px;
+    border: 1px solid #c5a880;
+    color: #f4efe6;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: #c5a880;
+    color: #1a120b;
+}
+
+/* ==========================================
+   SECCIÓN COCINAS ABIERTAS (DISEÑO BASE)
+   ========================================== */
+.seccion-cocina-abierta {
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+/* Banner superior a sangre completa */
+.cocina-abierta-banner {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+/* Aseguramos que el banner contenga el zoom sin desbordar */
+.cocina-abierta-banner {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    /* Imprescindible para que la foto no tape otros elementos al crecer */
+}
+
+/* Estado normal de la imagen con transición suave */
+.cocina-abierta-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    /* Transición ultrasuave estilo catálogo de lujo */
+}
+
+/* Efecto Zoom al pasar el ratón */
+.cocina-abierta-banner:hover img {
+    transform: scale(1.05);
+    /* Zoom sutil del 5% que le da vida sin ser agresivo */
+}
+
+/* Contenido centrado con ancho controlado */
+.cocina-abierta-contenido {
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.cocina-abierta-contenido h2 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.cocina-abierta-contenido p {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* Botón transparente rectangular */
+.btn-descubrir {
+    display: inline-block;
+    padding: 12px 45px;
+    border: 1px solid #1a1a1a;
+    background-color: transparent;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-descubrir:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* ==========================================
+   SECCIÓN COCINAS MODERNAS (CON FONDO LILA SUTIL)
+   ========================================== */
+.seccion-cocina-moderna {
+    width: 100%;
+    background-color: #ebdff0;
+    /* Un lila ultra suave, elegante y sutil */
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+/* Banner superior a sangre completa */
+.cocina-moderna-banner {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+/* Contenedor del banner moderno con control de desborde */
+.cocina-moderna-banner {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    /* Imprescindible para contener el zoom */
+}
+
+/* Estado normal de la imagen con transición ultrasuave */
+.cocina-moderna-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Efecto Zoom elegante al pasar el ratón */
+.cocina-moderna-banner:hover img {
+    transform: scale(1.05);
+}
+
+/* Contenido centrado con ancho controlado */
+.cocina-moderna-contenido {
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.cocina-moderna-contenido h2 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.cocina-moderna-contenido p {
+    font-size: 1rem;
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* ==========================================
+   SECCIÓN COCINAS EN L (FONDO BLANCO Y TEXTO NEGRO)
+   ========================================== */
+.seccion-cocina-l {
+    width: 100%;
+    background-color: #ffffff;
+    /* Fondo blanco pedido */
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+/* Banner superior a sangre completa */
+.cocina-l-banner {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+/* Contenedor del banner en L con control de desborde */
+.cocina-l-banner {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+/* Estado normal de la imagen con transición ultrasuave */
+.cocina-l-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Efecto Zoom al pasar el ratón */
+.cocina-l-banner:hover img {
+    transform: scale(1.05);
+}
+
+/* Contenido centrado con texto oscuro y legible */
+.cocina-l-contenido {
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.cocina-l-contenido h2 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    /* Título en negro rotundo */
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.cocina-l-contenido p {
+    font-size: 1rem;
+    color: #333333;
+    /* Párrafo en gris muy oscuro / negro con cojones para legibilidad perfecta */
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* Botón adaptado para fondo blanco (borde y texto negro) */
+.btn-descubrir-l {
+    display: inline-block;
+    padding: 12px 45px;
+    border: 1px solid #1a1a1a;
+    background-color: transparent;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-descubrir-l:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* ==========================================
+   SECCIÓN COCINAS EN MADERA (CON FONDO LILA SUTIL)
+   ========================================== */
+.seccion-cocina-madera {
+    width: 100%;
+    background-color: #ebdff0;
+    /* El mismo tono lila exacto anterior */
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+/* Banner superior a sangre completa */
+.cocina-madera-banner {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+/* Contenedor del banner de madera con control de desborde */
+.cocina-madera-banner {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+/* Estado normal de la imagen con transición ultrasuave */
+.cocina-madera-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Efecto Zoom al pasar el ratón */
+.cocina-madera-banner:hover img {
+    transform: scale(1.05);
+}
+
+/* Contenido centrado con texto oscuro y legible sobre fondo lila */
+.cocina-madera-contenido {
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.cocina-madera-contenido h2 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.cocina-madera-contenido p {
+    font-size: 1rem;
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* Botón adaptado para fondo lila (borde y texto oscuro) */
+.btn-descubrir-madera {
+    display: inline-block;
+    padding: 12px 45px;
+    border: 1px solid #1a1a1a;
+    background-color: transparent;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-descubrir-madera:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* ==========================================
+   SECCIÓN COCINAS BLANCAS (FONDO BLANCO Y TEXTO NEGRO)
+   ========================================== */
+.seccion-cocina-blanca {
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+/* Banner superior a sangre completa */
+.cocina-blanca-banner {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+/* Contenedor del banner blanco con control de desborde */
+.cocina-blanca-banner {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+/* Estado normal de la imagen con transición ultrasuave */
+.cocina-blanca-banner img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Efecto Zoom al pasar el ratón */
+.cocina-blanca-banner:hover img {
+    transform: scale(1.05);
+}
+
+/* Contenido centrado con texto oscuro y legible */
+.cocina-blanca-contenido {
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.cocina-blanca-contenido h2 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.cocina-blanca-contenido p {
+    font-size: 1rem;
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* Botón adaptado para fondo blanco */
+.btn-descubrir-blanca {
+    display: inline-block;
+    padding: 12px 45px;
+    border: 1px solid #1a1a1a;
+    background-color: transparent;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-descubrir-blanca:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* ==========================================
+   SECCIÓN CITA PREVIA (ANTES DEL FOOTER)
+   ========================================== */
+.seccion-cita {
+    width: 100%;
+    background-color: #000000;
+    /* Negro puro, negrísimo al máximo */
+    /* Fondo oscuro de la marca */
+    padding: 80px 20px;
+    box-sizing: border-box;
+    scroll-margin-top: 50px;
+    /* Para que el enlace suave quede clavado al pinchar Cita Previa */
+}
+
+.cita-contenedor {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cita-subtitulo {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: #c5a880;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cita-contenedor h2 {
+    font-size: 2.2rem;
+    color: #f4eae1;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.cita-contenedor p {
+    font-size: 0.95rem;
+    color: #d1c2b5;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Formulario */
+.formulario-cita {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.grupo-doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grupo-input label {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #c5a880;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.grupo-input input,
+.grupo-input textarea {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(197, 168, 128, 0.3);
+    padding: 14px 16px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.grupo-input input:focus,
+.grupo-input textarea:focus {
+    border-color: #c5a880;
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 10px rgba(197, 168, 128, 0.15);
+}
+
+/* Calendario y Hora nativos ocultos en caja limpia */
+.input-fecha-oculta {
+    cursor: pointer;
+    color-scheme: dark;
+    /* Hace que el selector nativo del navegador sea oscuro */
+}
+
+.input-fecha-oculta::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(0.8) sepia(1) saturate(3) hue-rotate(350deg);
+    /* Tono dorado para el icono */
+}
+
+/* Botón de envío */
+.btn-reserva {
+    margin-top: 15px;
+    width: 100%;
+    padding: 16px;
+    background-color: #c5a880;
+    color: #2b221e;
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-reserva:hover {
+    background-color: #ffffff;
+    color: #1a1a1a;
+}
+
+/* ==========================================
+   ESTILOS DE LA PÁGINA PROYECTOS
+   ========================================== */
+
+/* Hero Section */
+.proyectos-hero {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 70px 20px 40px 20px;
+}
+
+.subtitulo-dorado {
+    color: #ebdff0;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.proyectos-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.proyectos-hero p {
+    color: #cccccc;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+}
+
+/* Galería Grid */
+.galeria-proyectos {
+    background-color: #000000;
+    padding: 40px 20px 80px 20px;
+}
+
+.contenedor-galeria {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* Tarjetas con Hover Efecto */
+.tarjeta-proyecto {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #111111;
+}
+
+.imagen-contenedor {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.tarjeta-proyecto:hover .imagen-contenedor img {
+    transform: scale(1.05);
+}
+
+/* Capa de Texto sobre la Imagen */
+.overlay-proyecto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    color: #ffffff;
+}
+
+.categoria-etiqueta {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #ebdff0;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.overlay-proyecto h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* --- Sección Bento Grid Lila --- */
+.seccion-bento {
+    background-color: #1a1622 !important;
+    /* Fondo lila oscuro elegante */
+    padding: 70px 20px !important;
+    border-top: 1px solid #2e243a !important;
+    border-bottom: 1px solid #2e243a !important;
+}
+
+.bento-container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.bento-header {
+    text-align: center !important;
+    margin-bottom: 45px !important;
+}
+
+.bento-tag {
+    color: #c084fc !important;
+    /* Lila claro brillante */
+    font-size: 0.85rem !important;
+    letter-spacing: 2px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+}
+
+.bento-header h2 {
+    color: #ffffff !important;
+    font-size: 2.3rem !important;
+    margin: 10px 0 !important;
+}
+
+.bento-header p {
+    color: #b3a5c1 !important;
+    font-size: 1.05rem !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+}
+
+/* Grid Layout */
+.bento-grid {
+    display: grid !important;
+    grid-template-columns: 1.2fr 1fr !important;
+    grid-template-rows: repeat(2, 240px) !important;
+    gap: 20px !important;
+}
+
+.bento-item {
+    position: relative !important;
+    border-radius: 14px !important;
+    overflow: hidden !important;
+    border: 1px solid #362946 !important;
+    background-color: #241b2c !important;
+}
+
+.bento-large {
+    grid-row: span 2 !important;
+}
+
+.bento-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: transform 0.5s ease !important;
+}
+
+.bento-item:hover img {
+    transform: scale(1.06) !important;
+}
+
+.bento-overlay {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 25px 20px 20px !important;
+    background: linear-gradient(to top, rgba(20, 14, 28, 0.95), transparent) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+}
+
+.bento-categoria {
+    color: #00bcd4 !important;
+    font-size: 0.8rem !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    margin-bottom: 5px !important;
+}
+
+.bento-overlay h3 {
+    color: #ffffff !important;
+    margin: 0 !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+}
+
+/* --- Botón Volver al Inicio en Cita Previa --- */
+.formulario-cita .btn-volver {
+    background-color: transparent !important;
+    color: #00bcd4 !important;
+    border: 1px solid #00bcd4 !important;
+    padding: 12px 25px !important;
+    font-size: 1rem !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    text-align: center !important;
+    flex: 1 !important;
+    box-sizing: border-box !important;
+    transition: all 0.3s ease !important;
+}
+
+.formulario-cita .btn-volver:hover {
+    background-color: #00bcd4 !important;
+    color: #0d0d0d !important;
+}
+
+/* --- Botón Volver al Inicio en Cita Previa (Centrado) --- */
+.formulario-cita .btn-volver {
+    background-color: transparent !important;
+    color: #00bcd4 !important;
+    border: 1px solid #00bcd4 !important;
+    padding: 12px 25px !important;
+    font-size: 1rem !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    display: block !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+    transition: all 0.3s ease !important;
+
+}
+
+.formulario-cita .btn-volver:hover {
+    background-color: #00bcd4 !important;
+    color: #0d0d0d !important;
+}
+
+/* --- Botón Volver al Inicio en Cita Previa (Centrado y con Margen) --- */
+.formulario-cita .btn-volver {
+    background-color: transparent !important;
+    color: #00bcd4 !important;
+    border: 1px solid #00bcd4 !important;
+    padding: 12px 25px !important;
+    font-size: 1rem !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    display: block !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 15px auto 0 auto !important;
+    /* <--- Aquí está el margen superior de separación */
+    box-sizing: border-box !important;
+    transition: all 0.3s ease !important;
+}
+
+.formulario-cita .btn-volver:hover {
+    background-color: #00bcd4 !important;
+    color: #0d0d0d !important;
+}
+
+/* --- Estilos para la sección de cierre en Proyectos --- */
+.contenedor-cierre-proyectos {
+    text-align: center !important;
+    padding: 60px 20px !important;
+    background-color: #141414 !important;
+    border-top: 1px solid #2e243a !important;
+}
+
+.titulo-cierre {
+    color: #ffffff !important;
+    font-size: 1.8rem !important;
+    margin-bottom: 15px !important;
+    font-weight: 600 !important;
+}
+
+.texto-cierre {
+    color: #aaaaaa !important;
+    margin-bottom: 25px !important;
+    font-size: 1.05rem !important;
+}
+
+.btn-hero {
+    display: inline-block !important;
+    background-color: #00bcd4 !important;
+    color: #0d0d0d !important;
+    padding: 14px 30px !important;
+    font-size: 1.1rem !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3) !important;
+}
+
+.btn-hero:hover {
+    background-color: #008ba3 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+}
+
+/* --- SECCIÓN CONTACTO (Fondo Negro Puro con Bordes Claros) --- */
+.seccion-contacto-puro {
+    background-color: #000000 !important;
+    padding: 90px 20px !important;
+    min-height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    border-top: 2px solid #00bcd4 !important;
+    /* Raya superior en cian */
+    border-bottom: 2px solid #00bcd4 !important;
+    /* Raya inferior en cian */
+}
+
+.contacto-contenedor-puro {
+    width: 100% !important;
+    max-width: 950px !important;
+    margin: 0 auto !important;
+    background-color: #0d0d0d !important;
+    padding: 45px 50px !important;
+    border-radius: 14px !important;
+    border: 1px solid #333333 !important;
+    box-shadow: 0 15px 40px rgba(0, 188, 212, 0.2) !important;
+    box-sizing: border-box !important;
+}
+
+.contacto-subtitulo {
+    color: #00bcd4 !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 2px !important;
+    font-weight: 700 !important;
+    display: block !important;
+    text-align: center !important;
+    margin-bottom: 8px !important;
+}
+
+.contacto-contenedor-puro h2 {
+    color: #ffffff !important;
+    font-size: 2.2rem !important;
+    text-align: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
+}
+
+.contacto-contenedor-puro p {
+    color: #aaaaaa !important;
+    text-align: center !important;
+    margin-bottom: 35px !important;
+    font-size: 1.05rem !important;
+}
+
+.formulario-contacto-puro .grupo-input-puro {
+    margin-bottom: 20px !important;
+}
+
+.formulario-contacto-puro label {
+    display: block !important;
+    margin-bottom: 8px !important;
+    color: #ffffff !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+}
+
+.formulario-contacto-puro input,
+.formulario-contacto-puro textarea {
+    width: 100% !important;
+    padding: 12px 16px !important;
+    font-size: 1rem !important;
+    border: 1px solid #333 !important;
+    border-radius: 8px !important;
+    background-color: #141414 !important;
+    color: #ffffff !important;
+    box-sizing: border-box !important;
+}
+
+.formulario-contacto-puro input:focus,
+.formulario-contacto-puro textarea:focus {
+    outline: none !important;
+    border-color: #00bcd4 !important;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.3) !important;
+}
+
+.botones-container-contacto {
+    display: flex !important;
+    gap: 15px !important;
+    margin-top: 30px !important;
+    align-items: center !important;
+}
+
+.btn-enviar-contacto {
+    background-color: #00bcd4 !important;
+    color: #0d0d0d !important;
+    border: none !important;
+    padding: 14px 25px !important;
+    font-size: 1.05rem !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease !important;
+    flex: 1 !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+}
+
+.btn-enviar-contacto:hover {
+    background-color: #008ba3 !important;
+    color: #ffffff !important;
+}
+
+/* --- Botón Volver al Inicio en Contacto --- */
+.formulario-contacto-puro .btn-volver {
+    background-color: transparent !important;
+    color: #00bcd4 !important;
+    border: 1px solid #00bcd4 !important;
+    padding: 14px 25px !important;
+    font-size: 1.05rem !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    text-align: center !important;
+    flex: 1 !important;
+    box-sizing: border-box !important;
+    transition: all 0.3s ease !important;
+}
+
+.formulario-contacto-puro .btn-volver:hover {
+    background-color: #00bcd4 !important;
+    color: #0d0d0d !important;
+}
