@@ -1000,24 +1000,25 @@
     }
 }
 
-/* Ajuste ultra compacto para formularios en móvil en pantalla plana (horizontal) */
+/* Ajuste ultra recortado para pantalla plana (horizontal) del móvil */
 @media (max-width: 900px) and (orientation: landscape) {
 
     .formulario-container,
     .modal-formulario,
     form {
-        max-height: 75vh;
+        max-height: 68vh;
         overflow-y: auto;
-        padding-top: 5px !important;
-        padding-bottom: 5px !important;
-        margin-top: 0 !important;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+        margin-top: 15px !important;
+        /* Lo empuja un pelín hacia abajo para librar la cabecera */
         margin-bottom: 0 !important;
     }
 
     section,
     .contacto-section,
     .cita-previa-section {
-        padding-top: 10px !important;
-        padding-bottom: 10px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
     }
 }
