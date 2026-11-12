@@ -952,3 +952,22 @@
         opacity: 0;
     }
 }
+/* En tablets y pantallas medianas/móviles (menos de 992px), apilamos todo en una columna: foto arriba, texto abajo a full width */
+@media (max-width: 992px) {
+
+    .servicios-dual-section .dual-container,
+    .servicios-dual-inverso .dual-container {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+    }
+
+    /* Forzamos que en la tercera sección el texto vuelva a ponerse arriba y la foto abajo si se quedaba al revés */
+    .servicios-dual-inverso .dual-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .dual-slider-wrapper {
+        height: 380px !important;
+    }
+}
