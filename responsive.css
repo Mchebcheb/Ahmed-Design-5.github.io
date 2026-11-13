@@ -1022,3 +1022,34 @@
         padding-bottom: 5px !important;
     }
 }
+
+/* =========================================
+   RESPONSIVE: PANTALLA PLANA / HORIZONTAL (Landscape)
+   ========================================= */
+@media (max-width: 900px) and (orientation: landscape) {
+    .Aprender {
+        max-height: 75vh;
+        /* Limita la altura máxima al 75% de la pantalla */
+        overflow-y: auto;
+        /* Permite deslizar por dentro si el formulario es largo */
+        padding: 12px 20px;
+        /* Reduce el relleno interno para hacerlo más bajito */
+        margin: 15px auto;
+        /* Margen vertical compacto para aprovechar el alto */
+    }
+
+    /* Compacta los campos e inputs del formulario dentro de .Aprender */
+    .Aprender input,
+    .Aprender select,
+    .Aprender textarea,
+    .Aprender button {
+        padding: 6px 10px;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .Aprender textarea {
+        max-height: 60px;
+        /* Evita que el cuadro de texto grande ocupe toda la pantalla */
+    }
+}
