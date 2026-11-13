@@ -1084,3 +1084,20 @@
         font-size: 14px;
     }
 }
+
+/* ==========================================================
+   RESPONSIVE MÓVIL HORIZONTAL (PANTALLA PLANA / LANDSCAPE)
+   ========================================================== */
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .footer-carpinteria .footer-bottom .footer-links {
+        display: flex !important;
+        justify-content: flex-end !important;
+        padding-right: 65px !important;
+        box-sizing: border-box !important;
+    }
+
+    .footer-carpinteria .footer-bottom .footer-links a {
+        display: inline-block !important;
+        margin-right: 65px !important;
+    }
+}
