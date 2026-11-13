@@ -1053,3 +1053,34 @@
         /* Evita que el cuadro de texto grande ocupe toda la pantalla */
     }
 }
+
+/* =========================================
+   RESPONSIVE BOTÓN VOLVER
+   ========================================= */
+
+/* Móvil de pie (Portrait) */
+@media (max-width: 600px) and (orientation: portrait) {
+    .contenedor-volver {
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin: 30px 0 25px 0;
+    }
+
+    .btn-volver {
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+}
+
+/* Móvil tumbado / pantalla plana (Landscape) */
+@media (max-height: 500px) and (orientation: landscape) {
+    .contenedor-volver {
+        margin: 20px 0;
+    }
+
+    .btn-volver {
+        padding: 10px 26px;
+        font-size: 14px;
+    }
+}
