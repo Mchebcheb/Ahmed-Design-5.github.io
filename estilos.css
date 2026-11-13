@@ -1947,23 +1947,43 @@ main {
     background-image: url('servicio-10.jpg');
     animation-delay: 12s;
 }
-/* ==========================================
-   CORRECCIÓN GRID DUAL: FOTO MÁS GRANDE Y RESPONSIVE LIMPIO
-   ========================================== */
 
-/* En escritorio, damos un poco más de ancho a la columna de la foto (1.2fr frente a 1fr del texto) */
-.servicios-dual-section .dual-container,
-.servicios-dual-inverso .dual-container {
-    grid-template-columns: 1.2fr 1fr;
-    gap: 40px;
+/* =========================================
+   ESTILOS DEL BOTÓN VOLVER - PRIVACIDAD Y COOKIES
+   ========================================= */
+.contenedor-volver {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 30px 0;
+    width: 100%;
 }
 
-/* En la tercera sección el orden está invertido (texto izq / foto der), aseguramos proporciones */
-.servicios-dual-inverso .dual-container {
-    grid-template-columns: 1fr 1.2fr;
+.btn-volver {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background-color: #2b221e;
+    color: #f6f3f8;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid #d4a373;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-/* Altura generosa para que la foto luzca en condiciones */
-.dual-slider-wrapper {
-    height: 480px !important;
+.btn-volver:hover {
+    background-color: #d4a373;
+    color: #2b221e;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-volver:active {
+    transform: translateY(0);
 }
